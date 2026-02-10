@@ -1,9 +1,5 @@
-export default function Home() {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="">
-        <h1 className="">Fleet Members</h1>
-      </main>
-    </div>
-  );
+import { redirect } from "next/navigation";
+
+export default function RootPage() {
+  return redirect("/dashboard");
 }
